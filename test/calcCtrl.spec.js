@@ -126,6 +126,27 @@ describe('the calculation controller', function () {
         expect(ctrl.result).toBe(10);
       });
     });
+    
+    describe('multiply operator', function(){
+      var operator = 'multitply';
+      it('should calculate 2 * 2 = 4', function(){
+        var ctrl = createController();
+        ctrl.calculate(2, 2, operator);
+        expect(ctrl.result).toBe(4);
+      });
+
+      it('should calculate 2 * 0 = 0', function(){
+        var ctrl = createController();
+        ctrl.calculate(2, 0, operator);
+        expect(ctrl.result).toBe(0);
+      });
+
+      it('should calculate 2 * -1 = -2', function(){
+        var ctrl = createController();
+        ctrl.calculate(2, -1, operator);
+        expect(ctrl.result).toBe(-2);
+      });
+    });
 
     describe('divide operator', function () {
       var operator = 'divide';
