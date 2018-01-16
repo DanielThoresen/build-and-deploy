@@ -9,8 +9,8 @@ test:
   override:
     - grunt test
 
-deplayment:
-prod:
-  branch: master
-  heroku:
-    appname: daniel-test-build-and-deploy
+deployment:
+  prod:
+    branch: master
+    heroku:
+      appname: daniel-test-build-and-deploy
