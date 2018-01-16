@@ -13,4 +13,4 @@ deplayment:
 prod:
   branch: master
   heroku:
-    appname: {daniel-test-build-and-deploy}
+    appname: daniel-test-build-and-deploy
